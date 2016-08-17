@@ -3,37 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Technomart</title>
+	<link href="css/style.css" rel="stylesheet">
 </head>
 <body>
 	<header class="main-header">
-		<div class="header-top">
-			<div class="container">
-				<div class="logo">
-					<a href="">Техномарт</a>
-				</div>
-				<input type="search" placeholder="Поиск:">
-					<a href="">Закладки: 0</a>
-						<a href="">Корзина: 0</a>
+		<div class="header-top-nav">
+			<div class="container clearfix">
+				<div class="logo"><a href="">Техномарт</a></div>
+				<div class="search"><input type="search" name="search" placeholder="Поиск:"></div>
+					<div class="share"><a href=""><i class="check check-bookmark"></i>Закладки: 0</a></div>
+						<div class="basket"><a href=""><i class="check check-shopping-cart"></i>Корзина: 0</a></div>
 							<a class="btn-order" href="">Оформить заказ</a>
 			</div>
 		</div>
 	
-		<div class="container">
-			<div class="header-information">
+		<div class="container clearfix">
+			<div class="header-information clearfix">
 				<p>Интернет-магазин строительных материалов и инструментов для ремонта</p>
 				<div class="header-info">
-					<p>+7 (812) 555-05-55</p>
+					<h2><i class="check check-phone"></i>+7 (812) 555-05-55</h2>
 					<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
 				</div>
 				<div class="user-login">
-					<a class="enter" href="#">Войти</a>
+					<a class="enter" href="#"><i class="check check-sign-in"></i>Войти</a>
 					<a class="registration" href="#">Регистрация</a>
 				</div>
 			</div>
 
 			<nav class="main-navigation">
 				<ul>
-					<li>Главная</li>
+					<li><a href="">Главная</a></li>
 					<li><a href="">Компания</a></li>
 					<li><a href="">Каталог</a></li>
 					<li><a href="">Новости</a></li>
@@ -45,30 +44,30 @@
 		</div>
 	</header>
 
-		<main class="container">
-			<div class="content">
-				<div class="features">
-					<div class="features-materials">
+		<main class="container clearfix">
+			<div class="content clearfix">
+				<div class="features clearfix">
+					<div class="features-service materials">
 						<div class="features-img"></div>
 							<h2>Материалы</h2>
 								<div class="btn-features"><a href="">На любой вкус</a></div>
 					</div>
-					<div class="features-tools">
+					<div class="features-service tools">
 						<div class="features-img"></div>
 							<h2>Инструмент</h2>
 								<div class="btn-features"><a href="">На все случаи</a></div>
 					</div>
-					<div class="features-vehicle">
+					<div class="features-service vehicle">
 						<div class="features-img"></div>
 							<h2>Техника</h2>
 								<div class="btn-features"><a href="">Для стройки</a></div>
 					</div>
-					<div class="features-sale">
+					<div class="features-service discont">
 						<div class="features-img"></div>
 							<h2>Скидки 50%</h2>
 								<div class="btn-features"><a href="">На 350 товаров</a></div>
 					</div>
-					<div class="features-delovery">
+					<div class="features-service delivery">
 						<div class="features-img"></div>
 							<h2>Доставка</h2>
 								<div class="btn-features"><a href="">Бесплатно</a></div>
@@ -114,18 +113,18 @@
 					<a class="btn btn-title" href="">Все популярные товары</a>
 				</div>
 				<div class="catalog-small-goods">
-					<article class="goods">
+					<div class="goods">
 						<div class="image"><img src="img\snippet-32961 copy 3.jpg" width="" height=""></div>
-							<p>Перфоратор BOSH BFG 9000</p>
+							<h2>Перфоратор BOSH BFG 9000</h2>
 						<div class="discont">32 500 P.</div>
 						<div class="price">25 500 P.</div>
 						<div class="active">
-							<a class="buy" href="#"><i class="fa fa-shopping-cart"></i>Купить</a>
+							<a class="buy" href="#"><i class="check check-shopping-cart"></i>Купить</a>
 							<a class="bookmark" href="#">В закладки</a> 
 						</div>
-					</article>
-					<article class="goods">
-						<div class="image"><img src="img\snippet-18927 copy 2.jpg" width="" height=""></div>
+					</div>
+					<div class="goods">
+						<div class="image"><img src="img\bfg-3000.jpg" width="" height=""></div>
 							<p>Перфоратор BOSH BFG 3000</p>
 								<div class="discont">22 500 P.</div>
 								<div class="price">15 500 P.</div>
@@ -133,9 +132,9 @@
 									<a class="buy" href="#"><i class="fa fa-shopping-cart"></i>Купить</a>
 									<a class="bookmark" href="#">В закладки</a> 
 								</div>
-					</article>
-					<article class="goods">
-						<div class="image"><img src="img\snippet-945 copy 2.jpg" width="" height=""></div>
+					</div>
+					<div class="goods">
+						<div class="image"><img src="img\bfg-6000.jpg" width="" height=""></div>
 							<p>Перфоратор BOSH BFG 6000</p>
 								<div class="discont">30 500 P.</div>
 								<div class="price">25 500 P.</div>
@@ -143,9 +142,9 @@
 									<a class="buy" href="#"><i class="fa fa-shopping-cart"></i>Купить</a>
 									<a class="bookmark" href="#">В закладки</a> 
 								</div>
-					</article>
-					<article class="goods">
-						<div class="image"><img src="img\snippet-32961 copy 3.jpg" width="" height=""></div>
+					</div>
+					<div class="goods">
+						<div class="image"><img src="img\bfg-3000.jpg" width="" height=""></div>
 							<p>Перфоратор BOSH BFG 2000</p>
 								<div class="discont"></div>
 								<div class="price">15 500 P.</div>
@@ -153,7 +152,7 @@
 									<a class="buy" href="#"><i class="fa fa-shopping-cart"></i>Купить</a>
 									<a class="bookmark" href="#">В закладки</a> 
 								</div>
-					</article>
+					</div>
 				</div>
 			</div>
 
@@ -172,8 +171,8 @@
 				<a href="#"><img src="img\Metabo.jpg" width="" height="" alt=""></a>
 			</div>
 
-			<div class="block-information ">
-				<div class="container">
+			<div class="block-information clearfix">
+				<div class="container clearfix">
 					<section class="title">
 						<h2>Сервисы</h2>
 						<p>Хороший интернет-магазин отличается от плохого не только ценами!<br>
@@ -221,12 +220,12 @@
 								<li>Автотрейдинг</li>
 								<li>ЖелДорЭкспедиция</li>
 							</ul>
-						<a class="btn btn-dcl" href="">Подробнее о компании</a>
+						<a class="btn btn-details" href="">Подробнее о компании</a>
 					</section>
 					<section class="detals-company-right">
 						<h2>Контакты</h2>
 						<p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-							<div class="maps-detals-company"><img src="img\map.jpg" width="" height=""></div>
+							<div class="maps-details-company"><img src="img\map.jpg" width="" height=""></div>
 								<a class="btn btn-maps" href="">Заблудились? Напишите нам!</a>
 					</section>
 				</div>
@@ -234,13 +233,13 @@
 		</main>
 
 		<footer class="main-footer">
-			<div class="container">
-				<div class="footer-top">
+			<div class="container clearfix">
+				<div class="footer-top clearfix">
 					<div class="top-left-footer">
-						<div class="logo-footer"><a href="">Техномарт</a></div>
+						<div class="logo logo-footer"><a href="">Техномарт</a></div>
 						<div class="footer-contacts">
-							<p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
-							+7 (812) 555-05-55</p>
+							<h2>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
+							+7 (812) 555-05-55</h2>
 						</div>
 					</div>
 					<div class="footer-maps">
@@ -265,7 +264,7 @@
 				</div>
 			</div>
 		
-			<div class="footer-bottom">
+			<div class="footer-bottom clearfix">
 				<div class="container">
 					<div class="footer-bottom-info">
 						<p>© 2010–2016 Компания «Техномарт»<br>
@@ -276,13 +275,15 @@
 						<a href="#" class="social-btn social-btn-fb">Фейсбук</a>
 						<a href="#" class="social-btn social-btn-inst">Инстаграм</a>
 					</div>
-					<div class="footer-info-1">
-						<p>Обратная связь:</p>
-						<a href="">mail@htmlacademy.ru</a>
-					</div>
-					<div class="footer-info-2">
-						<p>Разработано —</p>
-						<a href="">htmlacademy.ru</a>
+					<div class="footer-info">
+						<div class="footer-feedback">
+							<p>Обратная связь:</p>
+							<a href="">mail@htmlacademy.ru</a>
+						</div>
+						<div class="footer-design">
+							<p>Разработано —</p>
+							<a href="">htmlacademy.ru</a>
+						</div>
 					</div>
 				</div>
 			</div>

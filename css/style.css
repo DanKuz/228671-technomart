@@ -1311,176 +1311,191 @@ input[type="search"]:active ~ label::before {
 
 /* ОСНОВНАЯ ЧАСТЬ -  СЕРВИСЫ*/
 
-.accommodations-title,
-.company-promo-title,
-.company-contacts-title {
-    color: #000000;
-}
-
-.accommodations-list-column a {
-    font-family: "Cuprum", sans-serif, Arial;
-    font-size: 21px;
-    line-height: 30px;
-    font-weight: 700;
-    text-decoration: none;
-    color: #ffffff;
-}
-
-.accommodations-list-column .accommodations-list-active {
-    color: #32425c;
-}
-
-.accommodations-details-title {
-    font-family: "Cuprum", sans-serif, Arial;
-    font-size: 36px;
-    line-height: 36px;
-    font-weight: 400;
-    color: #32425c;
-    text-transform: uppercase;
-}
-
-.accommodations {
+.deal {
     padding-top: 64px;
-    background-color: #f1f5f7;
+    background-color: #f2f6f8;
 }
 
-.accommodations-description {
-    margin-bottom: 65px;
+.deal-content {
+    padding-top: 36px;
+    padding-bottom: 0;
+    background-color: #f2f6f8;
 }
 
-.accommodations-title {
-    margin-bottom: 25px;
+.deal-heading {
+    margin: 0;
+    padding: 0;
 }
 
-.accommodations-list-column ul {
+.deal-heading h2 {
+    font: 30px "Cuprum", "Arial", sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.deal-heading p {
+    font: 13px/24px "PT Sans", "Arial", sans-serif;
+    color: #000000;
+    width: 430px;
+}
+
+.deal-slider {
     position: relative;
-    float: left;
-    display: block;
+    padding: 0;
+    min-height: 340px;
+}
+
+.deal-slider input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+.deal-slider-slides {
+    width: 620px;
+    margin-top: 0;
+    margin-left: 320px;
+    padding-top: 51px;
+    box-sizing: border-box;
+}
+
+.deal-slider-navigation {
+    position: absolute;
+    top: 54px;
+    left: -1px;
+    padding: 0;
     width: 240px;
 }
 
-.accommodations-list-column ul:before {
+.deal-slider-navigation:after {
+    content: "";
     position: absolute;
-    top: -27px;
+    top: -45px;
     right: 0;
     width: 10px;
-    min-height: 272px;
-    background: 0 0 no-repeat url("../img/dark-slide.png");
-    content: "";
+    height: 272px;
+    background: url("../img/dark-slide.png") no-repeat 100% 0;
 }
 
-.accommodations-list-column a {
-    box-sizing: border-box;
-    height: 60px;
+.deal-slider-navigation label {
     display: block;
-    padding-top: 16px;
-    padding-bottom: 18px;
-    padding-left: 24px;
+    padding-top: 18px;
+    padding-left: 22px;
+    padding-bottom: 17px;
+    font: bold 21px "Cuprum", "Arial", sans-serif;
+    color: #ffffff;
     background-color: #32425c;
     border-bottom: 1px solid #293449;
+    cursor: pointer;
+}
+
+.deal-slider-navigation label:not(:first-of-type) {
     border-top: 1px solid #405069;
 }
 
-.accommodations-list-column a:focus {
-    outline: none;
-}
-
-.accommodations-list-column a:hover {
+.deal-slider-navigation label:hover {
     background-color: #293449;
 }
 
-.accommodations-list-column .accommodations-list-active {
-    border-top: 1px solid transparent;
-    border-bottom: 1px solid transparent;
-}
-
-.accommodations-list-column .accommodations-list-active,
-.accommodations-list-column .accommodations-list-active:hover {
+#deal-slide-1:checked ~ .deal-slider-navigation label[for="deal-slide-1"],
+#deal-slide-2:checked ~ .deal-slider-navigation label[for="deal-slide-2"],
+#deal-slide-3:checked ~ .deal-slider-navigation label[for="deal-slide-3"] {
     background-color: #ffffff;
+    color: #32425c;
+    border-bottom-color: #ffffff;
 }
 
-.accommodations-details-block {
-    position: relative;
+.deal-slider-slide:nth-child(1) {
+    background: url("../img/delivery.png") no-repeat 99% 29px;
+    z-index: 5;
+}
+
+.deal-slider-slide:nth-child(2) {
+    background: url("../img/guaranty.png") no-repeat 100% 7px;
+    z-index: 10;
+}
+
+.deal-slider-slide:nth-child(3) {
+    background: url("../img/credit.png") no-repeat 100% 5px;
+    z-index: 15;
+}
+
+.deal-slider-slide {
     display: none;
-    float: right;
-    width: 620px;
-    min-height: 284px;
+    min-height: 290px;
 }
 
-.accommodations-details-title {
-    margin-bottom: 26px;
+#deal-slide-1:checked ~ .deal-slider-slides .deal-slider-slide:nth-child(1) {
+    display: block;
 }
 
-.accommodations-delivery-info {
+#deal-slide-2:checked ~ .deal-slider-slides .deal-slider-slide:nth-child(2) {
+    display: block;
+}
+
+#deal-slide-3:checked ~ .deal-slider-slides .deal-slider-slide:nth-child(3) {
+    display: block;
+}
+
+.deal-slide-title {
+    padding-top: 0;
+    font: 36px "Cuprum", "Arial", sans-serif;
+    text-transform: uppercase;
+    color: #32425c;
+    margin-bottom: 21px;
+}
+
+.deal-slider-slide p {
+    margin: 0;
+    padding: 0;
+    font: 13px/24px "PT Sans", "Arial", sans-serif;
+    color: #000000;
+    box-sizing: border-box;
+}
+
+.deal-slider-slide:first-child .p-1 {
     width: 280px;
 }
 
-.accommodations-warranty-info + .accommodations-warranty-info {
-    width: 180px;
+.deal-slider-slide:first-child .p-2 {
+    width: 200px;
 }
 
-.accommodations-details-delivery:before {
-    position: absolute;
-    width: 468px;
-    height: 261px;
-    bottom: 0;
-    right: 0;
-    background: 0 0 no-repeat url("../img/delivery.png");
-    content: "";
+.deal-slider-slide:nth-child(2) .p-1 {
+    width: 378px;
 }
 
-.accommodations-warranty-info {
-    width: 370px;
+.deal-slider-slide:nth-child(2) .p-2 {
+    width: 250px;
 }
 
-.accommodations-warranty-info + .accommodations-warranty-info {
-    width: 400px;
+.deal-slider-slide:nth-child(3) p {
+    width: 310px;
 }
 
-.accommodations-details-warranty:before {
-    position: absolute;
-    width: 465px;
-    height: 285px;
-    bottom: 0;
-    right: 0;
-    background: 0 0 no-repeat url("../img/credit.png");
-    content: "";
+.deal-slider-slide:nth-child(3) p:last-of-type {
+    margin: 0;
+    margin-bottom: 27px;
 }
 
-.accommodations-credit-info {
-    width: 220px;
-}
-
-.accommodations-credit-info + .accommodations-credit-info {
-    width: 300px;
-    margin-bottom: 29px;
-}
-
-.accommodations-details-credit:before {
-    position: absolute;
-    width: 389px;
-    height: 283px;
-    bottom: 0;
-    right: 0;
-    background: 0 0 no-repeat url("../img/guaranty.png");
-    content: "";
-}
-
-.accommodations-btn {
+.deal-btn {
+    font-family: "Cuprum", sans-serif, Arial;
     display: block;
-    width: 195px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    text-align: center;
-    border-radius: 5px;
     background-color: #ee3643;
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 10px;
+    width: 175px;
+    text-align: center;
+    border-radius: 3px;
 }
 
-.accommodations-btn:hover {
+.deal-btn:hover {
     background-color: #ca2c37;
 }
 
-.accommodations-btn:active {
+.deal-btn:active {
     background-color: #ba2732;
 }
 
@@ -1605,14 +1620,22 @@ input[type="search"]:active ~ label::before {
 .popular-title,
 .accommodations-title,
 .catalog-title,
-.excursus-title,
+.excursus-title {
+    font-family: "Cuprum", sans-serif, Arial;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 400;
+    color: #32425c;
+    text-transform: uppercase;
+}
+
 .company-promo-title,
 .company-contacts-title {
     font-family: "Cuprum", sans-serif, Arial;
     font-size: 30px;
     line-height: 30px;
     font-weight: 400;
-    color: #32425c;
+    color: #000000;
     text-transform: uppercase;
 }
 
@@ -1974,7 +1997,7 @@ input[type="radio"]:disabled + label {
 
 .catalog-scale-toggle::before {
     position: absolute;
-    top: 7px;
+    top: 7.5px;
     left: 7.5px;
     width: 5px;
     height: 5px;

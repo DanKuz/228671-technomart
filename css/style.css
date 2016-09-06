@@ -2462,7 +2462,6 @@ footer {
 	overflow:hidden;
 	z-index:1000;
 	box-shadow:0 20px 40px 0 rgba(0,1,1,.75);
-    animation:bounce .6s;
 }
 
 .write-us-buttons input,
@@ -2655,4 +2654,59 @@ textarea:focus{
   20%, 40%, 60%, 80% {
     transform: translateX(10px);
   }
+}
+
+
+
+
+.modal-content-map{
+	display: block;
+	position:fixed;
+	top:50%;
+	left:50%;
+	width:620px;
+	min-height:402px;
+	margin-top:-201px;
+	margin-left:-310px;
+	padding:0;
+	overflow:hidden;
+	z-index:1000;
+	box-shadow:0 20px 40px 0 rgba(0,1,1,.75);
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 0;
+  right: -34px;
+
+  width: 22px;
+  height: 22px;
+
+  font-size: 0;
+
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 2px;
+
+  width: 19px;
+  height: 3px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
 }

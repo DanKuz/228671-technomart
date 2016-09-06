@@ -627,7 +627,7 @@ input[type="search"]:active ~ label::before {
     text-align: center;
     font-variant: normal;
     text-transform: none;
-    content: "\1f516";
+    content: "\1f516";    
     cursor: pointer;
     color: #6a7180;
 }
@@ -2450,7 +2450,7 @@ footer {
 /* ФОРМА ДЛЯ JS */
 
 .modal-content-write{
-	display: block;
+	display: none;
 	position:fixed;
 	top:50%;
 	left:50%;
@@ -2488,6 +2488,7 @@ textarea:focus{
 	border:none;
 	z-index:1001;
 	background:url(../img/close.png) no-repeat;
+    cursor: pointer;
 }
 
 .modal-close-btn:focus{
@@ -2678,12 +2679,9 @@ textarea:focus{
   position: absolute;
   top: 0;
   right: -34px;
-
   width: 22px;
   height: 22px;
-
   font-size: 0;
-
   background-color: transparent;
   border: 0;
   outline: 0;
@@ -2696,11 +2694,11 @@ textarea:focus{
   position: absolute;
   top: 10px;
   left: 2px;
-
   width: 19px;
   height: 3px;
   background-color: #d0d0d0;
   border-radius: 1px;
+    
 }
 
 .modal-content-close::before {

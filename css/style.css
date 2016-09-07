@@ -213,7 +213,6 @@ header {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     vertical-align: top;
     text-decoration: inherit;
@@ -323,7 +322,6 @@ header {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     vertical-align: top;
     text-decoration: inherit;
@@ -457,7 +455,6 @@ header {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     vertical-align: top;
     text-decoration: inherit;
@@ -527,7 +524,6 @@ header {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     vertical-align: top;
     text-decoration: inherit;
@@ -560,7 +556,6 @@ input[type="search"]:active ~ label::before {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     vertical-align: top;
     text-decoration: inherit;
@@ -597,7 +592,6 @@ input[type="search"]:active ~ label::before {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     vertical-align: top;
     text-decoration: inherit;
@@ -616,7 +610,6 @@ input[type="search"]:active ~ label::before {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     vertical-align: top;
     text-decoration: inherit;
@@ -911,7 +904,6 @@ input[type="search"]:active ~ label::before {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     vertical-align: top;
     text-decoration: inherit;
@@ -1102,7 +1094,6 @@ input[type="search"]:active ~ label::before {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     text-decoration: inherit;
     text-align: center;
@@ -1708,7 +1699,6 @@ input[type="radio"]:disabled + label {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     text-decoration: inherit;
     text-align: center;
@@ -1733,7 +1723,6 @@ input[type="radio"]:disabled + label {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     text-decoration: inherit;
     text-align: center;
@@ -1842,7 +1831,6 @@ input[type="radio"]:disabled + label {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     text-decoration: inherit;
     text-align: center;
@@ -1864,7 +1852,6 @@ input[type="radio"]:disabled + label {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     text-decoration: inherit;
     text-align: center;
@@ -1998,7 +1985,6 @@ input[type="checkbox"] + label::before {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
     display: inline-block;
     text-decoration: inherit;
     text-align: center;
@@ -2336,7 +2322,7 @@ footer {
     font-family: "symbols-technomart";
     font-style: normal;
     font-weight: normal;
-    speak: none;
+    font-weight: normal;
     display: inline-block;
     text-decoration: inherit;
     text-align: center;

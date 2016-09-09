@@ -24,29 +24,24 @@ function toggleForm(event) {
 	login.focus();
 }
 
-
-
-
-
-
 var mapOpen = document.querySelector(".company-contacts-map");
-var mapPopup = document.querySelector(".modal-content-map");
-var mapClose = mapPopup.querySelector(".modal-close-btn");
+var mapPopup = document.querySelector(".map");
+var mapClose = mapPopup.querySelector(".modal-close-btn-map");
 
 mapOpen.addEventListener("click", function(event) {
-    event.preventDefault();
-    mapPopup.classList.mapToggle("modal-content-showmap");
+	event.preventDefault();
+	mapPopup.classList.toggle("show-map");
 });
 
-mapClose.addEventListener("click", mapToggle);
+mapClose.addEventListener("click", toggleFormMap);
 
 window.addEventListener("keydown", function(event) {
-	    if(event.keyCode == 27) {
-	    if (mapPopup.classList.contains("modal-content-showmap")) {
-        	mapPopup.classList.remove("modal-content-showmap"); }}
+		if (event.keyCode === 27) {
+		if (mapPopup.classList.contains("show-map")) {
+			mapPopup.classList.remove("show-map"); }}
 });
 
-function mapToggle(event) {
+function toggleFormMap(event) {
 	event.preventDefault();
-	mapPopup.classList.mapToggle("modal-content-show");
+	mapPopup.classList.toggle("show-map");
 }

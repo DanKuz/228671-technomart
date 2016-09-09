@@ -2367,7 +2367,7 @@ footer {
 
 /* КАРТА ДЛЯ JS */
 
-.modal-content-map {
+.map {
 	display: none;
 	position: fixed;
 	top: 50%;
@@ -2382,13 +2382,49 @@ footer {
 	box-shadow: 0 20px 40px 0 rgba(0,1,1,.75);
 }
 
-.modal-error {
-  animation: shake 0.6s;
+.show-map {
+    display: block;
+    animation: bounce 0.6s;
 }
 
-.modal-content-showmap {
-    display: block;
-    animation: bounce .6s;
+.modal-close-btn-map {
+	position: absolute;
+	right: 9px;
+	top: 16px;
+	margin: 0;
+	padding: 0;
+	width: 21px;
+	height: 21px;
+	border: none;
+	z-index: 1001;
+	background: url(../img/close.png) no-repeat;
+    cursor: pointer;
+}
+
+.modal-close-btn-map:focus {
+	outline: 0;
+}
+
+.modal-close-btn-map {
+	position: absolute;
+	right: -30px;
+	top: 13px;
+	margin: 0;
+	padding: 0;
+	width: 21px;
+	height: 21px;
+	border: none;
+}
+
+.modal-close-btn-map {
+	position: absolute;
+	right: 9px;
+	top: 17px;
+	margin: 0;
+	padding: 0;
+	width: 21px;
+	height: 21px;
+	border: none;
 }
 
 /* ФОРМА ДЛЯ JS */
@@ -2406,6 +2442,11 @@ footer {
 	overflow: hidden;
 	z-index: 1000;
 	box-shadow: 0 20px 40px 0 rgba(0,1,1,.75);
+}
+
+.modal-content-show {
+    display: block;
+    animation: bounce 0.6s;
 }
 
 .write-us-buttons input,
@@ -2559,16 +2600,6 @@ textarea:focus {
 
 .modal-error {
   animation: shake 0.6s;
-}
-
-.modal-content-show {
-    display: block;
-    animation: bounce 0.6s;
-}
-
-modal-content-showmap {
-    display: block;
-    animation: bounce 0.6s;
 }
 
 @keyframes bounce {

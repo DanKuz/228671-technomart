@@ -2365,6 +2365,32 @@ footer {
     width: 140px;
 }
 
+/* КАРТА ДЛЯ JS */
+
+.modal-content-map {
+	display: none;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 940px;
+	min-height: 447px;
+	margin-top: -201px;
+	margin-left: -470px;
+	padding: 0;
+	overflow: hidden;
+	z-index: 1000;
+	box-shadow: 0 20px 40px 0 rgba(0,1,1,.75);
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
+.modal-content-showmap {
+    display: block;
+    animation: bounce .6s;
+}
+
 /* ФОРМА ДЛЯ JS */
 
 .modal-content-write {
@@ -2395,7 +2421,7 @@ textarea:focus {
 	outline: 0;
 }
 
-.modal-content-write .modal-close-btn {
+.modal-close-btn {
 	position: absolute;
 	right: 9px;
 	top: 16px;
@@ -2536,6 +2562,11 @@ textarea:focus {
 }
 
 .modal-content-show {
+    display: block;
+    animation: bounce 0.6s;
+}
+
+modal-content-showmap {
     display: block;
     animation: bounce 0.6s;
 }

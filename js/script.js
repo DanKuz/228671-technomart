@@ -23,3 +23,30 @@ function toggleForm(event) {
 	popup.classList.toggle("modal-content-show");
 	login.focus();
 }
+
+
+
+
+
+
+var mapOpen = document.querySelector(".company-contacts-map");
+var mapPopup = document.querySelector(".modal-content-map");
+var mapClose = mapPopup.querySelector(".modal-close-btn");
+
+mapOpen.addEventListener("click", function(event) {
+    event.preventDefault();
+    mapPopup.classList.mapToggle("modal-content-showmap");
+});
+
+mapClose.addEventListener("click", mapToggle);
+
+window.addEventListener("keydown", function(event) {
+	    if(event.keyCode == 27) {
+	    if (mapPopup.classList.contains("modal-content-showmap")) {
+        	mapPopup.classList.remove("modal-content-showmap"); }}
+});
+
+function mapToggle(event) {
+	event.preventDefault();
+	mapPopup.classList.mapToggle("modal-content-show");
+}
